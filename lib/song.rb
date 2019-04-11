@@ -44,7 +44,7 @@ class Song
   end
 
   def self.new_from_filename(filename) #class constructor that accepts an .mp3 file
-    song = filename.split("-")
+    self.song = filename.split("-")
     artist_name = filename.delete(".mp3")
   end
 end
