@@ -55,4 +55,11 @@ class Song
   def self.create_from_filename(filename)
     @@all << self.new_from_filename(filename)
   end
+
+  def self.destroy_all
+    @@all.each do |all|
+      destroy_all(all)
+    end
+    @@all
+  end
 end
