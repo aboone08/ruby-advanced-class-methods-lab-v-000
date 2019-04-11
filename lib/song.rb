@@ -43,7 +43,10 @@ class Song
     self.all.sort_by {|song| song.name} #http://ruby-doc.org/core-2.6.2/Enumerable.html#method-i-sort_by
   end
 
-  def self.new_from_filename(format) #class constructor that accepts an .mp3 file
-
+  def self.new_from_filename(filename) #class constructor that accepts an .mp3 file
+    filename.split("-").remove(".mp3")
+    return song
+    
+    
   end
 end
