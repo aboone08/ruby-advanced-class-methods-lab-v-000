@@ -45,6 +45,6 @@ class Song
 
   def self.new_from_filename(filename) #class constructor that accepts an .mp3 file
     filename.split("-").remove(".mp3")
-    return song
+    return song && :artist_name
   end
 end
