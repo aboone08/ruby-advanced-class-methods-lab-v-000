@@ -57,9 +57,6 @@ class Song
   end
 
   def self.destroy_all
-    @@all.each do |all|
-      destroy_all(all)
-    end
-    @@all
+    song == @@all
   end
 end
